@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>es_game</name>
+    <events>
+        <variable constant="0" name="Author" sid="943742605517948" static="0" type="text">Paulo Fagundes</variable>
+        <event-group description="" sid="159422932904324" title="SYSTEM">
+            <sub-events>
+                <event-block sid="146248607792413">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="202050899770788" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Proramação de texto" sid="886501457391777" title="Texto">
+            <sub-events>
+                <comment>Mundaça de texto</comment>
+                <event-block sid="118745702464388">
+                    <conditions>
+                        <condition id="0" name="On any touch start" sid="568315839540787" type="Touch" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>Se texto da caixa é &quot;Text&quot;? Se sim, mude o para &quot;Meu jogo&quot;</comment>
+                        <event-block sid="844997603429582">
+                            <conditions>
+                                <condition id="0" name="Compare text" sid="787919893672414" type="Text">
+                                    <param id="0" name="Text to compare">&quot;Text&quot;</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="652939939635838" type="Text">
+                                    <param id="0" name="Text">&quot;Meu jogo&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Se texto da caixa é &quot;Meu Jogo&quot;? Se sim, mude o para &quot;Text&quot;</comment>
+                        <event-block sid="766927884529811">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="863329367017347" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="773506801725717" type="Text">
+                                    <param id="0" name="Text">&quot;Text&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
