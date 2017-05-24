@@ -14,5 +14,54 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="225886584077453">
+            <conditions>
+                <condition id="1" name="On any click" sid="862586737704861" type="Mouse" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="714856229577307" type="player">
+                    <param id="0" name="Object">bullet</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="153472945974773">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="202497236608074" type="bullet">
+                    <param id="0" name="Object">monster</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="116687888957048" type="monster" />
+                <action id="0" name="Spawn another object" sid="253926577256323" type="bullet">
+                    <param id="0" name="Object">explode</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="786843038037750" type="bullet" />
+            </actions>
+        </event-block>
+        <event-block sid="674837722941085">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="851811508139192" type="System" />
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="115976981237964" type="monster">
+                    <param id="0" name="Angle">360</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="766371895184250">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="342180152968667" type="monster" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="633185715925520" type="monster">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

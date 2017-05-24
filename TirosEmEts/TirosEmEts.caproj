@@ -173,7 +173,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="486342021694904" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\player.png">
+                    <frame duration="1" hotspotX="1.01852" hotspotY="0.495146" original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\player.png">
                         <collision-poly>
                             <point x="0.240741" y="0.252427" />
                             <point x="0.5" y="0.0776699" />
