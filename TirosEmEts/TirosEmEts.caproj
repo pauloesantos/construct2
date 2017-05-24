@@ -14,7 +14,14 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -51,6 +58,14 @@
         </object-type>
         <object-type name="bullet" sid="815315679239969">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="321305105753786">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="408223999006017">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="194233237016104" speed="5">
                     <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\bullet.png">
@@ -95,6 +110,11 @@
         </object-type>
         <object-type name="explode" sid="178128065262604">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="449535769958175">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="426296390952319" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.504951" original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\explode.png" />
@@ -103,6 +123,11 @@
         </object-type>
         <object-type name="monster" sid="369638404519110">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="301652202232518">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392860607469955" speed="5">
                     <frame duration="1" hotspotX="0.503448" hotspotY="0.5" original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\monster.png">
@@ -134,6 +159,17 @@
         </object-type>
         <object-type name="player" sid="646868070693144">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="639896104190881">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="167469397379199">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="529078297229939">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="486342021694904" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\player.png">
