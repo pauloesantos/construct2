@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>2qacmp5w4mprw</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML 5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Fullscreen in browser">Off</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview mode">HTTP</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="TiledBackground" sid="470598651085421">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Player" sid="502288638020337">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="161686175745369">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="740112423266388">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="108022591447463">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="240912496957819" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.504951">
+                        <image-point name="Imagepoint 1" x="1.0495" y="0.504951" />
+                        <collision-poly>
+                            <point x="0.0606436" y="0.220297" />
+                            <point x="0.414604" y="0" />
+                            <point x="0.842822" y="0.497525" />
+                            <point x="0.49505" y="0.970297" />
+                            <point x="0.164604" y="0.79703" />
+                            <point x="0.019802" y="0.49505" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="320189759770384">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Bullet" sid="903676134157500">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="779661666879615">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="767298769784278">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="897636617763459" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.08" y="0.166667" />
+                            <point x="0.48" y="0.166667" />
+                            <point x="0.84" y="0.333333" />
+                            <point x="0.92" y="0.5" />
+                            <point x="0.84" y="0.666667" />
+                            <point x="0.48" y="0.833333" />
+                            <point x="0.08" y="0.833333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Monster" sid="696496268310571">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="health" sid="891396269131144" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Movement" sid="173378898133633">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="759690888484868" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.389085" y="0.318627" />
+                            <point x="0.980634" y="0.102941" />
+                            <point x="0.739437" y="0.5" />
+                            <point x="0.963028" y="0.872549" />
+                            <point x="0.420775" y="0.754902" />
+                            <point x="0.0211268" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Explosion" sid="928639074807203">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="821569919993140">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="192279759517049" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504951" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Status" sid="528044209982552">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="GameOverText" sid="544562876709546">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Keyboard" sid="557587334345039">
+            <plugin id="Keyboard" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="16" />
+        <global-instance type="Keyboard" uid="17" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
