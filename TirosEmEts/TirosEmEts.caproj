@@ -11,6 +11,7 @@
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
@@ -187,6 +188,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Mouse" sid="543349573646075">
+            <plugin id="Mouse" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -197,6 +201,7 @@
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />
+        <global-instance type="Mouse" uid="15" />
     </global-instances>
     <sounds-folder />
     <music-folder />
