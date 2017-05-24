@@ -10,6 +10,8 @@
     <unique-id>3hxsai746trqi</unique-id>
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors />
@@ -40,9 +42,114 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="TiledBackground" sid="956970806040335">
+        <object-type name="bg" sid="956970806040335">
             <plugin id="TiledBg" />
             <texture original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\bg.png" />
+        </object-type>
+        <object-type name="Keyboard" sid="592097377918198">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="bullet" sid="815315679239969">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="194233237016104" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\bullet.png">
+                        <collision-poly>
+                            <point x="0.16" y="0.25" />
+                            <point x="0.48" y="0.25" />
+                            <point x="0.8" y="0.3125" />
+                            <point x="0.92" y="0.5" />
+                            <point x="0.8" y="0.6875" />
+                            <point x="0.48" y="0.75" />
+                            <point x="0.16" y="0.75" />
+                            <point x="0.08" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504951" original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\explode.png" />
+                    <frame duration="1" hotspotX="0.503448" hotspotY="0.5" original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\monster.png">
+                        <collision-poly>
+                            <point x="0.268966" y="0.39" />
+                            <point x="0.496552" y="0.24" />
+                            <point x="0.931035" y="0.1" />
+                            <point x="0.724138" y="0.5" />
+                            <point x="0.931035" y="0.9" />
+                            <point x="0.496552" y="0.75" />
+                            <point x="0.248276" y="0.64" />
+                            <point x="0.0206897" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\player.png">
+                        <collision-poly>
+                            <point x="0.240741" y="0.252427" />
+                            <point x="0.5" y="0.0776699" />
+                            <point x="0.685185" y="0.330097" />
+                            <point x="0.944444" y="0.495146" />
+                            <point x="0.703704" y="0.68932" />
+                            <point x="0.5" y="0.961165" />
+                            <point x="0.194444" y="0.796117" />
+                            <point x="0.0462963" y="0.495146" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="explode" sid="178128065262604">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="426296390952319" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504951" original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\explode.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="monster" sid="369638404519110">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392860607469955" speed="5">
+                    <frame duration="1" hotspotX="0.503448" hotspotY="0.5" original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\monster.png">
+                        <collision-poly>
+                            <point x="0.268966" y="0.39" />
+                            <point x="0.496552" y="0.24" />
+                            <point x="0.931035" y="0.1" />
+                            <point x="0.724138" y="0.5" />
+                            <point x="0.931035" y="0.9" />
+                            <point x="0.496552" y="0.75" />
+                            <point x="0.248276" y="0.64" />
+                            <point x="0.0206897" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\player.png">
+                        <collision-poly>
+                            <point x="0.240741" y="0.252427" />
+                            <point x="0.5" y="0.0776699" />
+                            <point x="0.685185" y="0.330097" />
+                            <point x="0.944444" y="0.495146" />
+                            <point x="0.703704" y="0.68932" />
+                            <point x="0.5" y="0.961165" />
+                            <point x="0.194444" y="0.796117" />
+                            <point x="0.0462963" y="0.495146" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player" sid="646868070693144">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="486342021694904" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\Pessoais Paulo\Projetos\Construct2\TirosEmEts\player.png">
+                        <collision-poly>
+                            <point x="0.240741" y="0.252427" />
+                            <point x="0.5" y="0.0776699" />
+                            <point x="0.685185" y="0.330097" />
+                            <point x="0.944444" y="0.495146" />
+                            <point x="0.703704" y="0.68932" />
+                            <point x="0.5" y="0.961165" />
+                            <point x="0.194444" y="0.796117" />
+                            <point x="0.0462963" y="0.495146" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
@@ -52,7 +159,9 @@
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="1" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
