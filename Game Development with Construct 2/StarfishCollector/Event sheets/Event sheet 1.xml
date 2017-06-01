@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="148622435167785">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="120822470984979" type="turtle">
+                    <param id="0" name="Object">starfish</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="157555179863682" type="starfish" />
+            </actions>
+        </event-block>
+        <event-block sid="825084215216919">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="156319764495111" type="System">
+                    <param id="0" name="First value">starfish.Count </param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="979689842201094" type="youwin">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -160,6 +160,9 @@
         </object-type>
         <object-type name="player" sid="646868070693144">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Vida do Monstro" name="health" sid="277088102366454" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="639896104190881">
                     <behavior id="EightDir" />

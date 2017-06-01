@@ -177,6 +177,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <health>5</health>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
                             <properties>
@@ -209,8 +212,8 @@
                         <width>108</width>
                         <height>103</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.504854381</hotspotY>
+                        <hotspotX>1.018518567</hotspotX>
+                        <hotspotY>0.495145619</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

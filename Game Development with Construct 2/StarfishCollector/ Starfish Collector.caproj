@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name> Starfish Collector</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>22v8suvgrk81d</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Water" sid="958313242422659">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="684859667299579" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Pessoais Paulo\Projetos\Construct2\Game Development with Construct 2\StarfishCollector\Ch02-assets\assets\water.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="turtle" sid="252018197242389">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="760282746289932">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="779118493650775">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="651607304552434" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="D:\Pessoais Paulo\Projetos\Construct2\Game Development with Construct 2\StarfishCollector\Ch02-assets\assets\turtle.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.0537634" />
+                            <point x="0.74" y="0.27957" />
+                            <point x="1" y="0.494624" />
+                            <point x="0.5" y="0.935484" />
+                            <point x="0.25" y="0.731183" />
+                            <point x="0.01" y="0.494624" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="starfish" sid="465951834331475">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="702870808907868">
+                    <behavior id="Rotate" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="344293079239532">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220055491425650" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\Pessoais Paulo\Projetos\Construct2\Game Development with Construct 2\StarfishCollector\Ch02-assets\assets\starfish.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.377358" />
+                            <point x="0.5" y="0.0188679" />
+                            <point x="0.666667" y="0.377358" />
+                            <point x="0.983333" y="0.490566" />
+                            <point x="0.75" y="0.716981" />
+                            <point x="0.5" y="0.849057" />
+                            <point x="0.216667" y="0.754717" />
+                            <point x="0.0166667" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="youwin" sid="852798769991228">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="358387363476693" speed="5">
+                    <frame duration="1" hotspotX="0.501144" hotspotY="0.5" original-source="D:\Pessoais Paulo\Projetos\Construct2\Game Development with Construct 2\StarfishCollector\Ch02-assets\assets\you-win.png">
+                        <collision-poly>
+                            <point x="0.0411899" y="0.183673" />
+                            <point x="0.961098" y="0.173469" />
+                            <point x="0.95881" y="0.816327" />
+                            <point x="0.0480549" y="0.785714" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rock" sid="656089346035642">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="603411100039814">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="834369954465081" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Pessoais Paulo\Projetos\Construct2\Game Development with Construct 2\StarfishCollector\Ch02-assets\assets\rock.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.2" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.82" y="0.18" />
+                            <point x="0.93" y="0.5" />
+                            <point x="0.81" y="0.81" />
+                            <point x="0.5" y="0.91" />
+                            <point x="0.19" y="0.81" />
+                            <point x="0.06" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Main.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances />
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
